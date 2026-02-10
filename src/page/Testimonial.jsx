@@ -12,9 +12,9 @@ export default function Testimonials() {
     {
       content:
         "The traceability system has been a game-changer for our quality control. We can now track every component from receipt to final product, reducing defects by 35%.",
-      author: "Sarah Rodriguez",
-      position: "Quality Manager, Precision Electronics",
-      initials: "SR",
+      author: "Uno Minda",
+      position: "Auto Parts manufacturing",
+      initials: "UM",
     },
     {
       content:

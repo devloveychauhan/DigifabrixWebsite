@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import React from "react";
 
 const CaseStudy = () => {
   return (
@@ -12,7 +11,7 @@ const CaseStudy = () => {
           {/* Content */}
           <div className="space-y-6">
             <div className="inline-block">
-              <span className="text-sm font-semibold text-teal-400 uppercase tracking-wider">
+              <span className="text-sm font-semibold text-[#f08209] uppercase tracking-wider">
                 Case Study
               </span>
             </div>
@@ -29,24 +28,24 @@ const CaseStudy = () => {
             {/* Key Metrics */}
             <div className="grid grid-cols-2 gap-6 pt-8">
               <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-                <p className="text-4xl font-bold text-teal-400 mb-2">32%</p>
+                <p className="text-4xl font-bold text-[#f08209] mb-2">32%</p>
                 <p className="text-sm text-slate-400">OEE Increase</p>
               </div>
               <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-                <p className="text-4xl font-bold text-teal-400 mb-2">$2.4M</p>
+                <p className="text-4xl font-bold text-[#f08209] mb-2">$2.4M</p>
                 <p className="text-sm text-slate-400">Annual Savings</p>
               </div>
               <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-                <p className="text-4xl font-bold text-teal-400 mb-2">89h</p>
+                <p className="text-4xl font-bold text-[#f08209] mb-2">89h</p>
                 <p className="text-sm text-slate-400">Downtime Eliminated</p>
               </div>
               <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-                <p className="text-4xl font-bold text-teal-400 mb-2">3mo</p>
+                <p className="text-4xl font-bold text-[#f08209] mb-2">3mo</p>
                 <p className="text-sm text-slate-400">ROI Achieved</p>
               </div>
             </div>
 
-            <button className="group flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-xl font-bold transition-all mt-8 shadow-lg shadow-teal-500/30">
+            <button className="group flex items-center gap-2 bg-[#f08209] hover:bg-[#d67f22] text-white px-8 py-4 rounded-xl font-bold transition-all mt-8 shadow-lg shadow-teal-500/30">
               Read Full Case Study{" "}
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -64,15 +63,15 @@ const CaseStudy = () => {
                 {[
                   { month: "Baseline", value: 58, color: "bg-slate-600" },
                   { month: "Month 1", value: 65, color: "bg-blue-500" },
-                  { month: "Month 2", value: 74, color: "bg-teal-500" },
-                  { month: "Month 3", value: 90, color: "bg-teal-400" },
+                  { month: "Month 2", value: 74, color: "bg-[#f08209]" },
+                  { month: "Month 3", value: 90, color: "bg-[#f08209]" },
                 ].map((item, idx) => (
                   <div key={idx}>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-sm font-semibold text-slate-300">
                         {item.month}
                       </span>
-                      <span className="text-lg font-bold text-teal-400">
+                      <span className="text-lg font-bold text-[#f08209]">
                         {item.value}%
                       </span>
                     </div>
@@ -92,13 +91,13 @@ const CaseStudy = () => {
                   <p className="text-slate-400 text-xs uppercase tracking-wider mb-2">
                     Operator Engagement
                   </p>
-                  <p className="text-2xl font-bold text-teal-400">+87%</p>
+                  <p className="text-2xl font-bold text-[#f08209]">+87%</p>
                 </div>
                 <div>
                   <p className="text-slate-400 text-xs uppercase tracking-wider mb-2">
                     Maintenance Efficiency
                   </p>
-                  <p className="text-2xl font-bold text-teal-400">+64%</p>
+                  <p className="text-2xl font-bold text-[#f08209]">+64%</p>
                 </div>
               </div>
             </div>

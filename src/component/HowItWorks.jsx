@@ -24,28 +24,24 @@ const HowItWorks = ({ activeStep, setActiveStep }) => {
                 title: "Assessment & Planning",
                 description:
                   "Our team analyzes your production lines and creates a customized digitization roadmap tailored to your needs.",
-                icon: "📊",
               },
               {
                 number: "02",
                 title: "Hardware Installation",
                 description:
                   "Deploy IoT sensors and gateways on your production floor. No production downtime required.",
-                icon: "⚙️",
               },
               {
                 number: "03",
                 title: "Data Integration",
                 description:
                   "Connect legacy systems, PLCs, and modern sensors. Our platform bridges all technologies.",
-                icon: "🔗",
               },
               {
                 number: "04",
                 title: "Go Live & Monitoring",
                 description:
                   "Start tracking OEE, throughput, and downtime in real-time. Full 24/7 support included.",
-                icon: "🚀",
               },
             ].map((step, idx) => (
               <div
@@ -66,6 +62,7 @@ const HowItWorks = ({ activeStep, setActiveStep }) => {
                       }`}
                     >
                       <div className="flex items-center gap-4 mb-4">
+                        {" "}
                         <span className="text-4xl">{step.icon}</span>
                         <span className="text-5xl font-bold text-blue-600">
                           {step.number}

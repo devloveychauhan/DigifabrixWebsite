@@ -1,5 +1,4 @@
 import { AlertCircle, ArrowRight, Check, TrendingUp, Zap } from "lucide-react";
-import React from "react";
 
 const OperatorEngagement = () => {
   return (
@@ -101,7 +100,7 @@ const OperatorEngagement = () => {
                 "Detailed shift reports and performance analytics",
               ].map((feature, idx) => (
                 <div key={idx} className="flex items-start gap-4">
-                  <div className="w-6 h-6 rounded-lg bg-teal-500 text-white flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 rounded-lg bg-blue-500 text-white flex items-center justify-center flex-shrink-0 mt-1">
                     <Check className="w-4 h-4" />
                   </div>
                   <p className="text-slate-700">{feature}</p>
@@ -110,7 +109,7 @@ const OperatorEngagement = () => {
             </div>
 
             {/* CTA */}
-            <button className="group flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-teal-500/30 w-fit">
+            <button className="group flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-teal-500/30 w-fit">
               Explore Operator Tools{" "}
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>

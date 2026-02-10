@@ -1,18 +1,22 @@
-import { Menu, Target, X } from "lucide-react";
+import { Key, LogInIcon, LucideLogIn, Menu, Target, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import SolutionsList from "./SolutionsList";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const NAV_ROUTES = [
     { label: "Home", to: "/" },
     { label: "Solutions", to: "/solutions" },
-    { label: "OEE", to: "/oee" },
+    { label: "OEE", to: "/solutions/oee" },
     { label: "Features", to: "/features" },
     { label: "Testimonials", to: "/testimonials" },
   ];
+
+  let timeout;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -37,22 +41,51 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
-          {NAV_ROUTES.map((item) => (
-            <Link
-              key={item.label}
-              to={item.to.toLowerCase()}
-              className="text-slate-500 hover:text-blue-500 font-medium transition-colors"
+          {NAV_ROUTES.map((item) => {
+            return (
+              <div key={item.label}>
+                {item.label === "Solutions" ? (
+                  <div
+                    className="relative group"
+                    onMouseEnter={() => {
+                      clearTimeout(timeout);
+                      setIsHovered(true);
+                    }}
+                    onMouseLeave={() => {
+                      timeout = setTimeout(() => setIsHovered(false), 150);
+                    }}
+                  >
+                    <Link
+                      className="text-slate-500 hover:text-blue-500 font-medium transition-colors"
+                      to={item.to}
+                    >
+                      Solutions
+                    </Link>
+
+                    {isHovered && <SolutionsList />}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.label}
+                    to={item.to.toLowerCase()}
+                    className="text-slate-500 relative hover:text-blue-500 font-medium transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                )}
+              </div>
+            );
+          })}
+
+          <div className="flex">
+            <a
+              href="https://app.digifabrix.com/"
+              target="blank"
+              className="bg-slate-900 cursor-pointer text-white px-6 py-2.5 rounded-[10px] font-medium hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl"
             >
-              {item.label}
-            </Link>
-          ))}
-          <a
-            href="https://app.digifabrix.com/"
-            target="blank"
-            className="bg-slate-900 cursor-pointer text-white px-6 py-2.5 rounded-[10px] font-medium hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl"
-          >
-            Request Free Trial
-          </a>
+              Sign Up
+            </a>
+          </div>
         </div>
 
         <div className="md:hidden">

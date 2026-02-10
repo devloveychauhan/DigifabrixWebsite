@@ -138,7 +138,7 @@ const DataVisulization = () => {
                   <h4 className="text-white font-semibold">
                     Production Throughput (Last 7 Days)
                   </h4>
-                  <span className="text-xs bg-teal-500/20 text-teal-300 px-2 py-1 rounded">
+                  <span className="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded">
                     Live
                   </span>
                 </div>
@@ -146,7 +146,7 @@ const DataVisulization = () => {
                   {[72, 85, 78, 92, 88, 95, 91].map((val, i) => (
                     <div
                       key={i}
-                      className="flex-1 bg-gradient-to-t from-teal-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity"
+                      className="flex-1 bg-gradient-to-t from-[#349dff] to-[#0084ff] rounded-t opacity-80 hover:opacity-100 transition-opacity"
                       style={{ height: `${(val / 100) * 100}%` }}
                     />
                   ))}

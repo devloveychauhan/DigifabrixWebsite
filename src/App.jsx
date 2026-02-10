@@ -1,13 +1,13 @@
 import Footer from "./component/Footer";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
-import Solutions from "./component/Solutions";
+import Solutions from "./page/Solutions";
 import WhyUs from "./component/WhyUs";
-import OEE from "./component/OEE";
-import Features from "./component/Feature";
-import Testimonials from "./component/Testimonial";
+import OEE from "./page/OEE";
+import Features from "./page/Feature";
+import Testimonials from "./page/Testimonial";
 import { Route, Routes } from "react-router-dom";
-import Career from "./component/Career";
+import Career from "./page/Career";
 import ScrollToTop from "./utils/Scroll";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route index element={<Hero />} />
         <Route path="/solutions" element={<Solutions />} />
-        <Route path="/oee" element={<OEE />} />
+        <Route path="/solutions/oee" element={<OEE />} />
         <Route path="/features" element={<Features />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/whyus" element={<WhyUs />} />

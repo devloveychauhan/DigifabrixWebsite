@@ -1,13 +1,4 @@
-import {
-  Briefcase,
-  Globe,
-  Locate,
-  LocateOffIcon,
-  MapPin,
-  Phone,
-  Pin,
-  PinIcon,
-} from "lucide-react";
+import { Globe, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -32,7 +23,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-bold text-slate-900 mb-4">Product</h4>
+            <h4 className="font-bold text-slate-900 mb-4">Solutions</h4>
             <ul className="space-y-2 text-sm text-slate-600">
               <li>
                 <a href="#" className="hover:text-blue-600">
@@ -87,18 +78,15 @@ const Footer = () => {
             <h4 className="font-bold text-slate-900 mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-slate-600">
               <li className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 mt-1 text-blue-600" />
+                <MapPin className="h-4  w-4 mt-1 text-blue-600" />
                 <span>
-                  B 0190, 2nd Floor, Gurutek City, Rewari, Haryana, India
+                  Shiv Nagar Part 2, Gali No. 1 DigiFabrix Technologies Pvt.
+                  Ltd. Rewari, Haryana 123401
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <Globe className="h-4 w-4 mt-1 text-blue-600" />
                 <span> sales@digifabrix.com</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Phone className="h-4 w-4 mt-1 text-blue-600" />
-                <span>+91 1274-313400</span>
               </li>
             </ul>
           </div>

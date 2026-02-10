@@ -4,3 +4,6 @@ html{
 
 @import 'tailwindcss';
 
+/* @apply{
+    solutionLists
+} */
