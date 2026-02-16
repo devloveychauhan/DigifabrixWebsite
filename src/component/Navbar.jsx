@@ -1,7 +1,8 @@
-import { Key, LogInIcon, LucideLogIn, Menu, Target, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SolutionsList from "./SolutionsList";
+import digifabrixLogo from "/digifabrixLogo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex items-center gap-2 cursor-pointer">
           <div className=" p-1 rounded-lg">
-            <img className="h-8 w-8" src="digifabrixLogo.png" alt="logo" />
+            <img className="h-8 w-8" src={digifabrixLogo} alt="logo" />
           </div>
           <span
             className={`text-2xl font-bold tracking-tight text-[rgb(0,86,169)] `}

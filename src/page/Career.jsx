@@ -116,7 +116,7 @@ export default function CareerPage() {
   return (
     <main className="bg-white text-slate-900">
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden bg-black text-white">
+      <section className="relative overflow-hidden bg-[#0d1019] text-white">
         <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-8 px-6 py-16 md:flex-row md:gap-12 md:py-28 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">

@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import Career from "./page/Career";
 import ScrollToTop from "./utils/Scroll";
 import Home from "./page/Home";
+import DojoLanding from "./page/DOJO";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/solutions/oee" element={<OEE />} />
+        <Route path="/solutions/dojo" element={<DojoLanding />} />
         <Route path="/features" element={<Features />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/whyus" element={<WhyUs />} />

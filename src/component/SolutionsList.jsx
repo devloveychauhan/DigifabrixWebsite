@@ -38,9 +38,6 @@ const SolutionsList = () => {
         <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
           Our Solutions
         </h3>
-        <p className="text-lg font-semibold text-slate-800 mt-1">
-          Smart Manufacturing Modules
-        </p>
       </div>
 
       <ul className="grid grid-cols-2 gap-x-8 gap-y-3">

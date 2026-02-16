@@ -6,7 +6,6 @@ import DataVisulization from "../component/DataVisulization";
 import OperatorEngagement from "../component/OperatorEngagement";
 import CTASection from "../component/CTASection";
 import CountUp from "react-countup";
-import AnimatedBar from "../component/AnimatedBar";
 import VideoComponent from "../component/VideoComponent";
 
 const Home = () => {
